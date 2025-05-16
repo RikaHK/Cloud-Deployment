@@ -42,7 +42,7 @@ project-root/
 │   ├── .env
 │   └── requirements.txt
 │
-├── frontend/                 # Optional
+├── frontend/                 
 │   └── (React/Angular/Vue)
 │
 ├── schema.sql                # Database schema
@@ -72,7 +72,7 @@ DB_HOST=mydb.cluster-c4ngqk4m6bi3.us-east-1.rds.amazonaws.com
 DB_NAME=postgres
 DB_USER=Hamza
 DB_PORT=5432
-DB_PASSWORD=Pakistanarmy1
+DB_PASSWORD=YourPassword
 ```
 
 ---
@@ -154,7 +154,7 @@ docker build -t backend-app .
 docker run -d -p 8000:8000 --env-file .env backend-app
 ```
 
-### 8. Frontend Deployment (Optional)
+### 8. Frontend Deployment 
 
 Deploy to Elastic Beanstalk or S3 as needed. Update backend API URLs accordingly.
 
@@ -162,7 +162,7 @@ Deploy to Elastic Beanstalk or S3 as needed. Update backend API URLs accordingly
 
 ## Security Configuration
 
-- All secrets managed in `.env` (never commit to git)
+- All secrets managed in `.env` 
 - RDS access restricted to EC2 via security groups
 - EC2 access via SSH from trusted IPs
 - IAM roles created with least privilege access
