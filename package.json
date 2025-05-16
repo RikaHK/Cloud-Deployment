@@ -1,0 +1,16 @@
+{
+  "name": "frontend-app",
+  "version": "1.0.0",
+  "description": "Frontend for cloud deployment",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "react-scripts build"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^3.0.1"
+  }
+}
